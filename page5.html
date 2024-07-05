@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Bot - Feedback</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Feedback</h1>
+    <p>How was your experience?</p>
+    <div class="stars">
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+      <span class="star">&#9733;</span>
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll('.star').forEach((star, index) => {
+      star.addEventListener('mouseover', () => {
+        for (let i = 0; i <= index; i++) {
+          document.querySelectorAll('.star')[i].classList.add('hover');
+        }
+      });
+      star.addEventListener('mouseout', () => {
+        document.querySelectorAll('.star').forEach(star => star.classList.remove('hover'));
+      });
+      star.addEventListener('click', () => {
+        alert(`You rated ${index + 1} stars!`);
+      });
+    });
+  </script>
+</body>
+</html>

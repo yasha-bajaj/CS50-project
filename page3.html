@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Bot - Result</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Your Mood Result</h1>
+    <div id="result">Calculating...</div>
+    <button id="recommendations-btn">Give Me Recommendations!</button>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const totalScore = parseInt(localStorage.getItem('totalScore'));
+      let mood;
+      if (totalScore <= 10) {
+        mood = 'Sad';
+      } else if (totalScore <= 20) {
+        mood = 'Neutral';
+      } else {
+        mood = 'Happy';
+      }
+      document.getElementById('result').textContent = `Your mood is: ${mood}`;
+      document.getElementById('recommendations-btn').addEventListener('click', function() {
+        window.location.href = 'page4.html';
+      });
+    });
+  </script>
+</body>
+</html>

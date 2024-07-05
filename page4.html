@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Bot - Recommendations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Song Recommendations</h1>
+    <div id="recommendations">Loading recommendations...</div>
+  </div>
+
+  <!-- Footer with navigation to feedback page -->
+  <footer class="footer">
+    <button id="feedback-btn">Give Feedback</button>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const totalScore = parseInt(localStorage.getItem('totalScore'));
+      let recommendations;
+      if (totalScore <= 10) {
+        recommendations = [
+          'The Night We Met - Lord Huron', 'Let Her Go - Passenger', 'Dancing On My Own - Robyn',
+          'Tears Dry On Their Own - Amy Winehouse', 'All I Want - Kodaline',
+          'Someone Like You - Adele', 'Fix You - Coldplay',
+          'Skinny Love - Bon Iver', 'Stay - Rihanna ft. Mikky Ekko',
+          'Unchained Melody - The Righteous Brothers'
+        ];
+      } else if (totalScore <= 20) {
+        recommendations = [
+          'Shallow - Lady Gaga & Bradley Cooper', 'Shape of You - Ed Sheeran', 'Blinding Lights - The Weeknd',
+          'Circles - Post Malone', 'Stay - Rihanna ft. Mikky Ekko',
+          'Viva La Vida - Coldplay', 'Rolling in the Deep - Adele',
+          'Counting Stars - OneRepublic', 'Lose Yourself - Eminem',
+          'Happier - Marshmello ft. Bastille'
+        ];
+      } else {
+        recommendations = [
+          'Happy - Pharrell Williams', 'Uptown Funk - Mark Ronson ft. Bruno Mars', 'Can’t Stop the Feeling - Justin Timberlake',
+          'Shake It Off - Taylor Swift', 'Levitating - Dua Lipa',
+          'Roar - Katy Perry', 'Good as Hell - Lizzo',
+          'Blinding Lights - The Weeknd', 'Dynamite - BTS',
+          'Best Day of My Life - American Authors'
+        ];
+      }
+      document.getElementById('recommendations').innerHTML = recommendations.map(song => `<p>${song}</p>`).join('');
+    });
+
+    // Redirect to feedback page when the button is clicked
+    document.getElementById('feedback-btn').addEventListener('click', function() {
+      window.location.href = 'page5.html';
+    });
+  </script>
+</body>
+</html>

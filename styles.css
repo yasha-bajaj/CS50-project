@@ -1,0 +1,100 @@
+/* styles.css */
+
+/* General styles for the body to use a pastel background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffefd5; /* Pastel peach color */
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  /* Container styles with a slight shadow and rounded corners */
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title styling */
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* General button styles with hover effect */
+  button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    background-color: #a8e6cf; /* Light pastel green */
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #ffd3b6; /* Light pastel orange */
+    transform: scale(1.05); /* Slightly increase size */
+  }
+  
+  /* Styles for option buttons */
+  .option-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #dcedc1; /* Light pastel yellow-green */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    max-width: 250px;
+  }
+  
+  /* Option button hover effect */
+  .option-btn:hover {
+    background-color: #ff8b94; /* Light pastel pink */
+    color: #fff;
+    transform: scale(1.05); /* Slightly increase size */
+  }
+  
+  /* Star rating styles */
+  .star {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  /* Star hover effect */
+  .star.hover {
+    color: gold;
+    transform: scale(1.2); /* Slightly increase size */
+  }
+  
+  /* Footer styles */
+  .footer {
+    margin-top: 20px;
+  }
+  
+  /* Ensure the footer button is styled similarly */
+  #feedback-btn {
+    background-color: #ffb6c1; /* Light pastel pink */
+    color: #333;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  /* Footer button hover effect */
+  #feedback-btn:hover {
+    background-color: #ff8b94; /* Darker pastel pink */
+    transform: scale(1.05); /* Slightly increase size */
+  }
+  
