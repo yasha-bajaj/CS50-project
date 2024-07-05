@@ -1,5 +1,4 @@
 # Music Bot - Mood-Based Music Recommendation System
-![Music Bot Logo](images/music-bot-logo.png)
 
 Music Bot is a web-based application designed to recommend music based on the user's mood. The application consists of a series of interactive pages where users answer questions to determine their mood, receive personalized music recommendations, and provide feedback.
 
@@ -41,19 +40,11 @@ Music Bot is a web-based application designed to recommend music based on the us
 6. **Provide Feedback**:
    - Share your thoughts and rate your experience.
 
-## Screenshots
-
-![Screenshot 1](images/screenshot1.png)
-![Screenshot 2](images/screenshot2.png)
-![Screenshot 3](images/screenshot3.png)
 
 ## Contributors
 
-- [Yasha Bajaj](https://github.com/your-username)
+- [Yasha Bajaj](https://github.com/yasha-bajaj)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
@@ -61,11 +52,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Inspiration and guidance from the CS50 team.
 
 ---
-
-Replace placeholders like `your-username`, `images/`, and update sections with actual project details and paths. Ensure to include relevant screenshots to showcase different pages of your application. Adjust the URLs and content according to your actual GitHub repository structure and project specifics.
-Yasha Bajaj
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 Acknowledgments
 Built as part of the CS50 course by Harvard University.
