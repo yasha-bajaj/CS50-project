@@ -21,7 +21,7 @@
     document.addEventListener('DOMContentLoaded', function() {
       const totalScore = parseInt(localStorage.getItem('totalScore'));
       let recommendations;
-      if (totalScore <= 10) {
+      if (totalScore <= 15) {
         recommendations = [
           'The Night We Met - Lord Huron', 'Let Her Go - Passenger', 'Dancing On My Own - Robyn',
           'Tears Dry On Their Own - Amy Winehouse', 'All I Want - Kodaline',
@@ -29,7 +29,7 @@
           'Skinny Love - Bon Iver', 'Stay - Rihanna ft. Mikky Ekko',
           'Unchained Melody - The Righteous Brothers'
         ];
-      } else if (totalScore <= 20) {
+      } else if (totalScore <= 25) {
         recommendations = [
           'Shallow - Lady Gaga & Bradley Cooper', 'Shape of You - Ed Sheeran', 'Blinding Lights - The Weeknd',
           'Circles - Post Malone', 'Stay - Rihanna ft. Mikky Ekko',
