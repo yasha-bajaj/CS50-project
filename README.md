@@ -2,6 +2,8 @@
 
 Music Bot is a web-based application designed to recommend music based on the user's mood. The application consists of a series of interactive pages where users answer questions to determine their mood, receive personalized music recommendations, and provide feedback.
 
+## Video URL: https://youtu.be/GV5DHNlEG5U
+
 ## Features
 
 - **Introduction Page**: Start by entering the Music Bot application.
